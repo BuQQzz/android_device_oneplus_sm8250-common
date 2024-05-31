@@ -313,13 +313,15 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # OPlusExtras
-PRODUCT_PACKAGES += \
-    OPlusExtras \
-    tri-state-key-calibrate
+# Comment out OPlusExtras and tri-state-key-calibrate
+# PRODUCT_PACKAGES += \
+#    OPlusExtras \
+#    tri-state-key-calibrate
 
 # Overlays
-$(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
-$(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
+# Comment out or ensure the existence of these overlays
+# $(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
+# $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-evolution
@@ -332,18 +334,19 @@ PRODUCT_PACKAGES += \
     EvolutionSettingsResCommon \
     EvolutionSystemUIResCommon \
     FrameworksResTarget \
-    OPlusExtrasResCommon \
-    OPlusFrameworksResCommon \
-    OPlusSettingsResCommon \
-    OPlusSystemUIResCommon \
+    # OPlusExtrasResCommon \
+    # OPlusFrameworksResCommon \
+    # OPlusSettingsResCommon \
+    # OPlusSystemUIResCommon \
     WifiResTarget
 
 # Oplus-fwk
-PRODUCT_PACKAGES += \
-    oplus-fwk
+# Comment out oplus-fwk
+# PRODUCT_PACKAGES += \
+#    oplus-fwk
 
-PRODUCT_BOOT_JARS += \
-    oplus-fwk
+# PRODUCT_BOOT_JARS += \
+#    oplus-fwk
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
