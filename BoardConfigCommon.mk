@@ -166,4 +166,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 include vendor/oneplus/sm8250-common/BoardConfigVendor.mk
 
 # Disable ELF file check for camera libs bundled in APKs
-DISABLE_ELF_CHECK := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
